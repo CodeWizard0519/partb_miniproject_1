@@ -113,7 +113,7 @@ jobs:
 
     - name: Push Docker Image to DockerHub
       run: |
-        sudo docker tag bpartb_miniproject_1_api ${{ secrets.DOCKER_USERNAME }}/partb_miniproject_1_api:latest
+        sudo docker tag partb_miniproject_1_api ${{ secrets.DOCKER_USERNAME }}/partb_miniproject_1_api:latest
         sudo docker push ${{ secrets.DOCKER_USERNAME }}/partb_miniproject_1_api:latest
 
   deploy:
